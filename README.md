@@ -46,9 +46,7 @@ User → FastAPI Backend
 
         ├── Primary LLM (Groq)
 
-        │       └── on failure →
-
-        └── Fallback LLM (Ollama)
+        │       └── on failure → Fallback LLM (Ollama)
 
 D) Project Constraints & Design Decisions
 

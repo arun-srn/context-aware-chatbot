@@ -1,21 +1,20 @@
                                         Context-Aware Chatbot with Memory and Fallback Models
 
-Overview
-
+A) Overview -
 This project is a context-aware conversational chatbot built using FastAPI.
 It is designed to handle multi-turn conversations, remember past interactions within a session, and remain functional even when the primary language model fails by automatically falling back to a local model.
 
 The focus of this project is system design and reliability, not training models from scratch.
 
-Key Features
-1. Multi-Turn Conversation Memory
+B) Key Features -
+1. Multi-Turn Conversation Memory 
 
 The chatbot maintains session-based memory.
 Previous user and assistant messages are included in future prompts.
 This allows the bot to respond consistently and contextually across multiple turns.
 Memory is implemented in-memory for simplicity and performance.
 
-2. Primary + Fallback Model Architecture
+2. Primary + Fallback Model Architecture 
 
 Primary model: Groq-hosted LLM (fast, low-latency, cloud-based)
 Fallback model: Locally hosted Ollama model
@@ -39,7 +38,7 @@ User messages are right-aligned
 Assistant messages are left-aligned
 Clean, chat-style interaction similar to common messaging apps
 
-System Architecture (High Level)
+C) System Architecture (High Level)
 User → FastAPI Backend
 
         ├── Cache (fast return if hit)
@@ -50,23 +49,23 @@ User → FastAPI Backend
 
         └── Fallback LLM (Ollama)
 
-Project Constraints & Design Decisions
+D) Project Constraints & Design Decisions
 
 This project intentionally does not over-engineer beyond the requirements.
 
-Long-Term Memory -
+1) Long-Term Memory -
 Persistent long-term memory (database, embeddings, disk storage) is not implemented.
 Reason: The problem statement does not require persistence across restarts, and adding it would increase complexity without clear benefit.
 
-Cache Eviction / TTL -
+2) Cache Eviction / TTL -
 Cache does not include TTL or eviction policies.
 Reason: The scope focuses on demonstrating caching behavior, not production-grade cache management.
 
-Retrieval-Augmented Generation (RAG) -
+3) Retrieval-Augmented Generation (RAG) -
 No vector database or embeddings are used.
 Reason: The requirement is context awareness, not semantic document retrieval.
 
-Tech Stack -
+E) Tech Stack -
 
 Backend: FastAPI (Python)
 Primary LLM: Groq API
@@ -96,6 +95,7 @@ What This Project Demonstrates Well
 
 ✅ Clean separation of components
 
+
 What This Project Is Not
 
 ❌ A production-ready chatbot
@@ -104,7 +104,7 @@ What This Project Is Not
 
 ❌ A full RAG system with embeddings
 
-Final Notes
+Final Notes -
 
 This project prioritizes clarity, reliability, and alignment with requirements over unnecessary complexity.
 All design choices were made deliberately to match the stated objectives and constraints.

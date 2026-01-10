@@ -1,6 +1,7 @@
                                         Context-Aware Chatbot with Memory and Fallback Models
 
 A) Overview -
+
 This project is a context-aware conversational chatbot built using FastAPI.
 It is designed to handle multi-turn conversations, remember past interactions within a session, and remain functional even when the primary language model fails by automatically falling back to a local model.
 
@@ -67,14 +68,15 @@ Reason: The requirement is context awareness, not semantic document retrieval.
 
 E) Tech Stack -
 
-Backend: FastAPI (Python)
-Primary LLM: Groq API
-Fallback LLM: Ollama (local)
-HTTP Client: httpx
-Frontend: HTML + minimal JavaScript
-Environment Management: dotenv
+1) Backend: FastAPI (Python)
+2) Primary LLM: Groq API
+3) Fallback LLM: Ollama (local)
+4) HTTP Client: httpx
+5) Frontend: HTML + minimal JavaScript
+6) Environment Management: dotenv
 
-How to Run
+F) How to Run -
+
 # Activate virtual environment
 venv\Scripts\Activate.ps1
 
@@ -83,7 +85,7 @@ python -m uvicorn app.main:app --reload
 
 Then open: http://127.0.0.1:8000
 
-What This Project Demonstrates Well
+G) What This Project Demonstrates Well
 
 ✅ Context-aware conversation
 
@@ -96,7 +98,7 @@ What This Project Demonstrates Well
 ✅ Clean separation of components
 
 
-What This Project Is Not
+H) What This Project Is Not
 
 ❌ A production-ready chatbot
 
@@ -104,7 +106,7 @@ What This Project Is Not
 
 ❌ A full RAG system with embeddings
 
-Final Notes -
+I) Final Notes -
 
 This project prioritizes clarity, reliability, and alignment with requirements over unnecessary complexity.
 All design choices were made deliberately to match the stated objectives and constraints.

@@ -104,6 +104,11 @@ H) What This Project Is Not
 
 ❌ A full RAG system with embeddings
 
+## Screenshot
+
+![Chatbot UI](docs/screenshot.png)
+
+
 I) Final Notes -
 
 This project prioritizes clarity, reliability, and alignment with requirements over unnecessary complexity.

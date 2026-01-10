@@ -108,6 +108,10 @@ H) What This Project Is Not
 
 ![Chatbot UI](docs/screenshot.png)
 
+## Demo Video
+
+▶️ [Watch demo](docs/demo.mp4)
+
 
 I) Final Notes -
 

@@ -141,7 +141,7 @@ These limitations are intentional and aligned with the project scope.
 - Hi
 - My name is Arun
 - What is my name?
-- I have an exam tomorrow
+- I have my Calculus exam tomorrow
 - What subject is my exam for?
 - What is 25 × 16?
 - Ask the same question twice to observe caching
@@ -153,8 +153,6 @@ These limitations are intentional and aligned with the project scope.
 
 ▶️ Watch the full working demo:  
 [Click here to view the demo video](docs/demo.mp4)
-
-(The demo showcases multi-turn memory, caching behavior, and fallback model activation.)
 
 ---
 
